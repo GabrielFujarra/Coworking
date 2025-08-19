@@ -56,13 +56,12 @@ namespace UsuariosCoworking.Models
             {
                 foreach (var i in Users)
                 {
-                    Console.WriteLine("Nome : {0}  -   CPF : {1}", i._NomeUsuario, i.Cpf);
+                    Console.WriteLine("Nome : {0}  -   CPF : {1}", i.NomeUsuario, i.Cpf);
                 }
-
-                Console.WriteLine("Pressione qualquer tecla para continuar");
-                Console.ReadKey();
             }
-           
+            Console.WriteLine("Pressione qualquer tecla para continuar");
+            Console.ReadKey();
+
         }
     }
 }

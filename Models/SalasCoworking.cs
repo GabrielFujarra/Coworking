@@ -48,10 +48,9 @@ namespace SalasCoworking.Models
                 {
                     Console.WriteLine("Nome :  {0}  -  Capacidade : {1}", i.NomeSala, i.Capacidade);
                 }
-
-                Console.WriteLine("Pressione qualquer tecla para continuar");
-                Console.ReadKey();
             }
+            Console.WriteLine("Pressione qualquer tecla para continuar");
+            Console.ReadKey();
         }
 
     }

@@ -2,8 +2,6 @@
 using UsuariosCoworking.Models;
 
 
-Console.Clear();
-
 Console.WriteLine("Bem vindo ao Coworking ");
 
 while (true)
