@@ -9,6 +9,8 @@ namespace SalasCoworking.Models
     public class CriarSala
     {
 
+        public string Tamanho { get; set; }
+
         private static List<CriarSala> Salas = new List<CriarSala>();
         public int Capacidade { get; set; }
         public string NomeSala { get; set; }
@@ -16,8 +18,7 @@ namespace SalasCoworking.Models
         public CriarSala(string nomesala, int capacidade)
         {
             NomeSala = nomesala;
-            Capacidade = capacidade;
-
+            Capacidade = capacidade; 
         }
 
         public static void CadastrarSala()
@@ -30,10 +31,6 @@ namespace SalasCoworking.Models
 
             CriarSala novaSala = new CriarSala(nomesala, capacidade);
             Salas.Add(novaSala);
-
-
-
-
         }
 
         public static void ListarSalas()
@@ -51,6 +48,12 @@ namespace SalasCoworking.Models
             }
             Console.WriteLine("Pressione qualquer tecla para continuar");
             Console.ReadKey();
+
+        }
+
+        public static void ReservaSala()
+        {
+
         }
 
     }

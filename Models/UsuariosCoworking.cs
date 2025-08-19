@@ -40,8 +40,24 @@ namespace UsuariosCoworking.Models
             Console.Write("Digite seu CPF : ");
             int cpf = int.Parse(Console.ReadLine());
 
-            CriarUsuario novo = new CriarUsuario(nome, cpf);
-            Users.Add(novo);
+            bool existe = false;
+
+            foreach (var u in Users)
+            {
+                if (u.Cpf == cpf || u.NomeUsuario == nome)
+                {
+                    Console.WriteLine("Ja existe um usuario cadastrado com essa informação");
+                    existe = true;
+                    break;
+                }
+            }
+            if (existe == false)
+            {
+                CriarUsuario novo = new CriarUsuario(nome, cpf);
+                Users.Add(novo);
+            }
+            Console.WriteLine("Pressione qualquer tecla para continuar");
+            Console.ReadKey();
 
 
         }

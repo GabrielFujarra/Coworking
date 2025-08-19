@@ -10,6 +10,7 @@ while (true)
     Console.WriteLine("2 -  Cadastrar Usuario");
     Console.WriteLine("3 - Listar Salas Cadastradas");
     Console.WriteLine("4 - Listar Usuarios Cadastrados");
+    Console.WriteLine("5 - Reserva sala");
     int opcao = int.Parse(Console.ReadLine());
 
     switch (opcao)
@@ -25,6 +26,8 @@ while (true)
             break;
         case 4:
             CriarUsuario.ListarUsuario();
+            break;
+        case 5:
             break;
         default:
             break;
